@@ -15,8 +15,10 @@ namespace eRestaurantSystem.Data.Entities
     public class BillItem
     {
         [Key]
+        [Column(Order = 1)]
         public int BillID { get; set; }
         [Key]
+        [Column(Order = 2)]
         public int ItemID { get; set; }
         public int Quantity { get; set; }
         public decimal SalePrice { get; set; }

@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website\", "{099FD59D-09E7-4402-9119-2731A8871D17}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{a0e1fdab-756c-4193-a8b8-a0b2380a83e3}|eRestaurantSystem.dll;{D803890C-B711-4FDE-8683-66ED0B1B6408}|eRestaurantSystem.Data.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_62318"
 		Debug.AspNetCompiler.PhysicalPath = "Website\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62318\"

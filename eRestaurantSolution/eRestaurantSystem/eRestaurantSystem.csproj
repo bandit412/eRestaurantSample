@@ -49,12 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\WaiterController.cs" />
     <Compile Include="DAL\eRestaurantContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BLL\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\eRestaurantSystem.Data\eRestaurantSystem.Data.csproj">
       <Project>{d803890c-b711-4fde-8683-66ed0b1b6408}</Project>

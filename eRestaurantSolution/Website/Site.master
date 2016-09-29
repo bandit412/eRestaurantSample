@@ -46,7 +46,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">eRestaurant</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <%--<ul class="nav navbar-nav">
@@ -83,6 +83,9 @@
                         DynamicMenuStyle-BackColor="#000000">
                         <Items>
                             <asp:MenuItem Text="Home" NavigateUrl="~/" />
+                            <asp:MenuItem Text="LINQ Queries" Value="linq">
+                                <asp:MenuItem Text="Waiter Sample" NavigateUrl="~/Queries/WaiterContactSample.aspx" />
+                            </asp:MenuItem>
                             <asp:MenuItem Text="About" NavigateUrl="~/About.aspx" />
                             <asp:MenuItem Text="Contact" NavigateUrl="~/Contact.aspx" />
                         </Items>
