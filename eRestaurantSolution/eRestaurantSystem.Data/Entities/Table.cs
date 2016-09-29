@@ -16,14 +16,17 @@ namespace eRestaurantSystem.Data.Entities
     {
         [Key]
         public int TableID { get; set; }
+        [Required(ErrorMessage = "Table Number is required")]
+        [Range(1, 25, ErrorMessage = "Table Number must be a positive number")]
         public int TableNumber { get; set; }
         public bool Smoking { get; set; }
-        [Range(2, 8, ErrorMessage = "Minimum of 2, and a maximum of 8, people per table.")]
+        [Range(2, 8, ErrorMessage = "Minimum of 1, and a maximum of 8, people per table.")]
         public int Capacity { get; set; }
         public bool Available { get; set; }
 
         // Navigation Properties
         public virtual ICollection<Bill> Bills { get; set; }
+        public virtual ICollection<Reservation> Reservations { get; set; }
 
         // Make a new table available
         public Table()
