@@ -18,10 +18,17 @@ namespace eRestaurantSystem.Data.Entities
         public int TableID { get; set; }
         public int TableNumber { get; set; }
         public bool Smoking { get; set; }
+        [Range(2, 8, ErrorMessage = "Minimum of 2, and a maximum of 8, people per table.")]
         public int Capacity { get; set; }
         public bool Available { get; set; }
 
         // Navigation Properties
         public virtual ICollection<Bill> Bills { get; set; }
+
+        // Make a new table available
+        public Table()
+        {
+            Available = true;
+        }
     }
 }

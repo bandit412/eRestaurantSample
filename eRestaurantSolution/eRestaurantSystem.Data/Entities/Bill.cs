@@ -31,5 +31,11 @@ namespace eRestaurantSystem.Data.Entities
         public virtual Waiter Waiters { get; set; }
         public virtual ICollection<BillItem> BillItems { get; set; }
         public virtual Table Tables { get; set; }
+
+        // Set the BillDate for any new Bill
+        public Bill()
+        {
+            BillDate = DateTime.Now;
+        }
     }
 }

@@ -20,8 +20,11 @@ namespace eRestaurantSystem.Data.Entities
         [Key]
         [Column(Order = 2)]
         public int ItemID { get; set; }
+        [Range(0, int.MaxValue, ErrorMessage = "Quantity for a new item must be greater than or equal to zero")]
         public int Quantity { get; set; }
+        [Range(0.00, double.MaxValue, ErrorMessage = "Sale Price must be greater than or equal to 0.00")]
         public decimal SalePrice { get; set; }
+        [Range(0.00, double.MaxValue, ErrorMessage = "Unit Cost must be greater than or equal to 0.00")]
         public decimal UnitCost { get; set; }
         public string Notes { get; set; }
 
